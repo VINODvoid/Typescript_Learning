@@ -14,4 +14,10 @@ let isLoggedIn :boolean = true;
 //? 3 . string
 let userName :string = "John Doe";
 
+//? 4. any
+let hero:string;
+function getHero() {
+    return "John Doe";
+}
+hero = getHero();
 export {}
