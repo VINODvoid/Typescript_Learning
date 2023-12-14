@@ -60,9 +60,23 @@ userInput = "new input";
 
 
 
+type Var  = {
+    readonly _id :string;
+    name : string;
+    email:string;
+    isActive:boolean;
+}
 
 
 
+let letUser : Var = {
+    _id: "123",
+    name: "Rajat",
+    email: "gfgf",
+    isActive: true
+}
+
+letUser._id = "1234"
 export {}
 
 function sanitize(str: string): string {
