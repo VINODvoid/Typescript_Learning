@@ -1,5 +1,5 @@
 class App{
-    private _courseCount =1
+    protected _courseCount =1
     readonly city: string = "Delhi";
     constructor (
         public name: string,
@@ -14,6 +14,13 @@ class App{
     }
     set courseCount(count:number){
         this._courseCount = count;
+    }
+}
+
+class subApp  extends App{
+    isFamily: boolean = true;
+    changecourseCount(){
+        this._courseCount = 4;
     }
 }
 
